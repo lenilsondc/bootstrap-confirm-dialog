@@ -27,11 +27,12 @@
                         handler;
                     
                     if(nodeName == 'a'){
+                        var that = this;
                         handler = function(e){
-                            window.location.href = this.element.href;
+                            window.location.href = that.element.href;
+                            $modal.modal('hide');
                         };
                     }else if(inputType == 'submit'){
-                        console.log('1');
                         var form = $this.closest('form')[0];
                         
                         $(form).submit(function (e) {
@@ -39,7 +40,6 @@
                         });
                         
                         handler = function (e){
-                            console.log('1');
                             form.submit();
                             $modal.modal('hide');
                                      
