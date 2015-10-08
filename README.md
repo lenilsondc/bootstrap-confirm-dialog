@@ -1,4 +1,4 @@
-# BSModalConfirm
+# Bootstrap Confirm Plugin
 Confirm dialog based on Bootstrap Modal
 
 ## Usage
