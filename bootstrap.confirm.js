@@ -4,9 +4,10 @@
     var
     pluginName = 'bsModalConfirm',
 	defaults = {
-	    template: '<div class="modal fade" tabindex="-1" role="dialog"><div class="modal-dialog modal-sm"><div class="modal-content"><div class="modal-header bg-danger text-danger"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 id="mySmallModalLabel" class="modal-title">{{title}}</h4></div><div class="modal-body">{{message}}</div><div class="modal-footer"><button class="btn btn-default" data-dismiss="modal">Cancelar</button><button class="btn btn-danger" data-trigger="confirm">Confirmar</button></div></div></div></div>',
+	    template: '<div class="modal fade" tabindex="-1" role="dialog"><div class="modal-dialog modal-sm"><div class="modal-content"><div class="modal-header bg-{{type}} text-{{type}}"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 id="mySmallModalLabel" class="modal-title">{{title}}</h4></div><div class="modal-body">{{message}}</div><div class="modal-footer"><button class="btn btn-default" data-dismiss="modal">Cancelar</button><button class="btn btn-{{type}}" data-trigger="confirm">Confirmar</button></div></div></div></div>',
 	    title: 'Confirm',
-	    message: ''
+	    message: '',
+        type: 'success'
 	};
 
 
@@ -26,7 +27,8 @@
                 templateString = settings.template;
             for (var option in settings) {
                 if (typeof (settings[option]) === 'string' && option !== 'template' && settings.hasOwnProperty(option)) {
-                    templateString = templateString.replace('{{' + option.trim() + '}}', settings[option]);
+                    var rgx = new RegExp('\{\{' + option.trim() + '\}\}', 'g');
+                    templateString = templateString.replace(rgx, settings[option]);
                 }
             }
 
