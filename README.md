@@ -1,5 +1,5 @@
 # Bootstrap Confirm Plugin
-Confirm dialog based on Bootstrap Modal
+Bootstrap Confirm is a jQuery plugin based on Bootstrap Modal to create a confirmation dialog system.
 
 ## Usage
 
