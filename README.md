@@ -7,7 +7,8 @@ Confirm dialog based on Bootstrap Modal
     <button class="btn btn-default" 
       data-toggle="confirm" 
       data-title="Wait!" 
-      data-message="Are you sure?">
+      data-message="Are you sure?"
+      data-type="success">
       Confirm Form Submition
     </button>
 </form>
@@ -15,7 +16,8 @@ Confirm dialog based on Bootstrap Modal
 <a href="#" 
   data-toggle="confirm" 
   data-title="Wait!" 
-  data-message="Are you sure?">
+  data-message="Are you sure?"
+      data-type="danger">
   Confirm link
   </a>
 ```
