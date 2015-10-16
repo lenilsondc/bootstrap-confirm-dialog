@@ -3,7 +3,7 @@ Confirm dialog based on Bootstrap Modal
 
 ## Usage
 
-The plugin are triggered by `data-toggle="confirm"`. Supports link redirections and form submitions.
+The plugin are triggered by `data-toggle="confirm"` attribute. Supports link redirections and form submitions.
 ```html
 <form>
     <button class="btn btn-default" 
