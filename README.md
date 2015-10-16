@@ -1,7 +1,8 @@
 # Bootstrap Confirm Plugin
 Bootstrap Confirm is a jQuery plugin based on Bootstrap Modal to create a confirmation dialog system.
 
-## Usage
+## API
+### Usage
 
 The plugin are triggered by `data-toggle="confirm"` attribute. Supports link redirections and form submitions.
 ```html
@@ -24,7 +25,6 @@ The plugin are triggered by `data-toggle="confirm"` attribute. Supports link red
   </a>
 ```
 
-## API
 ### Options
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-title=""`.
