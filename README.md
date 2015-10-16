@@ -32,7 +32,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 |Name|type|default|description|
 |---|---|---|---|
 |title|string|'Confirm'|Represents the title of dialog modal|
-|message|string|''|The confirmation message|
-|type|enum|`['success', 'info', 'warning', 'danger', 'default']`|Sets the colors on dialog template|
+|message|string|'Are your sure?'|The confirmation message|
+|type|enum|success &#124; info &#124; warning &#124; danger &#124; default|Sets the colors on dialog template|
 |template|html|'<div class="modal" ...'|Is the template for the dialog modal, it cam be change for diferent modal templates|
 
